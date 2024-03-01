@@ -1,0 +1,507 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "OpinionesDZ",
+    "dateExported": "2024-03-01T13:37:29.487Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f38609a4-138f-4f09-bfce-e8583c287f3e",
+            "name": "login",
+            "containerId": "",
+            "created": "2024-03-01T07:09:05.649Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "4cc44de8-c8d0-47ea-93f0-6416220db996",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-01T07:05:31.213Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "3a567dc5-b06a-4a68-a190-c63990d32998",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-01T07:16:24.741Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "647ae81a-da2a-48f6-b12d-10e3ebb83847",
+            "name": "publicacion",
+            "containerId": "",
+            "created": "2024-03-01T07:45:40.478Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "1dc758ca-68c6-45b6-9c4d-535cf757e62c",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-03-01T13:09:42.852Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "97ad13c6-55b8-456e-916b-3a2a9967b79d",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "4cc44de8-c8d0-47ea-93f0-6416220db996",
+            "name": "register",
+            "url": "localhost:2627/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T07:05:38.727Z",
+            "modified": "2024-03-01T13:07:19.102Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "carlix"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "carlix"
+                    },
+                    {
+                        "name": "username",
+                        "value": "carlix"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "carlix@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c1886ff3-a865-4ac0-a96f-b969e9fe4094",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "647ae81a-da2a-48f6-b12d-10e3ebb83847",
+            "name": "publication",
+            "url": "localhost:2627/publication/savePublication",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T07:31:15.575Z",
+            "modified": "2024-03-01T08:41:34.954Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI3ODU5MiwiZXhwIjoxNzA5Mjg5MzkyfQ.R1-6lN5mS4YoUUBfQsZZwUkV9pP4KNcEB-x6gfPRvCk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Se derriten los glaciares"
+                    },
+                    {
+                        "name": "content",
+                        "value": "polo norte"
+                    },
+                    {
+                        "name": "fecha",
+                        "value": "2024/02/27 01:53:00"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e192ae57230e445e66ec99"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e1949c37e1ac27fe713785"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0339f480-5b6c-4bd7-aa14-edf076e89261",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "f38609a4-138f-4f09-bfce-e8583c287f3e",
+            "name": "login",
+            "url": "localhost:2627/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T07:09:10.555Z",
+            "modified": "2024-03-01T07:36:45.054Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI3ODU5MiwiZXhwIjoxNzA5Mjg5MzkyfQ.R1-6lN5mS4YoUUBfQsZZwUkV9pP4KNcEB-x6gfPRvCk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Zabala"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "Zabala@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "40bd585c-a09b-4283-90e5-fc66609d6c39",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "4cc44de8-c8d0-47ea-93f0-6416220db996",
+            "name": "GetUser",
+            "url": "localhost:2627/user/obtener",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-01T07:12:41.233Z",
+            "modified": "2024-03-01T13:19:17.663Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ad62f2eb-1cec-44c4-abab-c22bdf0571a7",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "4cc44de8-c8d0-47ea-93f0-6416220db996",
+            "name": "UpdateU",
+            "url": "localhost:2627/user/updateUser",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T07:13:21.580Z",
+            "modified": "2024-03-01T07:14:05.969Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJaYWJhbGEiLCJpYXQiOjE3MDkyNzcwMTMsImV4cCI6MTcwOTI4NzgxM30.RnLU-2U0Rh0wdQhoIDBKvTy1gcsuGCXutwpLYLZZvRQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Itzep"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6b47f19-8dcb-44ee-8552-eb907f859ddf",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "3a567dc5-b06a-4a68-a190-c63990d32998",
+            "name": "save",
+            "url": "localhost:2627/category/saveCategory",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T07:16:39.248Z",
+            "modified": "2024-03-01T13:20:56.713Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "categoryName",
+                        "value": "Peligro"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Guerra"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1ef4628e-45a1-48f2-b831-0112ed0705a8",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "3a567dc5-b06a-4a68-a190-c63990d32998",
+            "name": "UpdateC",
+            "url": "localhost:2627/category/updateCategory/65e1827a7b3ba576c6ce1f65",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-01T07:24:09.305Z",
+            "modified": "2024-03-01T07:24:54.001Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI3Nzg4NSwiZXhwIjoxNzA5Mjg4Njg1fQ.Fv4gh21bEd0C-mo7GZHjXPu0OOhLeSP6vLfwpZ9ehaU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "categoryName",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "description",
+                        "value": "Iglesia"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "99023480-050e-432e-badf-5458ab111048",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "3a567dc5-b06a-4a68-a190-c63990d32998",
+            "name": "Obtener",
+            "url": "localhost:2627/category/obtener",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-01T07:25:37.831Z",
+            "modified": "2024-03-01T13:18:00.515Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "449ee7b0-c250-4d89-b9b7-1d3006b01c8a",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "3a567dc5-b06a-4a68-a190-c63990d32998",
+            "name": "delete",
+            "url": "localhost:2627/category/deleteCategory/65e1827a7b3ba576c6ce1f65",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-01T07:28:30.405Z",
+            "modified": "2024-03-01T07:29:22.312Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI3ODA5NywiZXhwIjoxNzA5Mjg4ODk3fQ.QYM5SsXK1y5Diz2miAFl7WhvegB274CKNWH-G5oaSYQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d2056b7c-6944-441f-9880-35095ee0e116",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "647ae81a-da2a-48f6-b12d-10e3ebb83847",
+            "name": "update",
+            "url": "localhost:2627/publication/updatePublication/65e1859d75ca2f9122321f07",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-01T07:46:51.310Z",
+            "modified": "2024-03-01T07:53:58.120Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI3ODYwNSwiZXhwIjoxNzA5Mjg5NDA1fQ.aeiwXx2xQkVr55QtozSPXgBhbBDy4nSiJUPUJRn-0g4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Covid"
+                    },
+                    {
+                        "name": "content",
+                        "value": "covid en el hopsital Roosvelt"
+                    },
+                    {
+                        "name": "fecha",
+                        "value": "2024/03/1 1:53:00"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e187b62f83671abdafc0b2"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fa0165eb-765f-47bb-a931-deb5a7651864",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "647ae81a-da2a-48f6-b12d-10e3ebb83847",
+            "name": "Obtener",
+            "url": "localhost:2627/publication/obtener",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-01T07:56:47.157Z",
+            "modified": "2024-03-01T08:40:03.249Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI3ODYwNSwiZXhwIjoxNzA5Mjg5NDA1fQ.aeiwXx2xQkVr55QtozSPXgBhbBDy4nSiJUPUJRn-0g4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ae3e17d5-e2d1-4678-8597-84a4af1a5e09",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "647ae81a-da2a-48f6-b12d-10e3ebb83847",
+            "name": "delete",
+            "url": "localhost:2627/publication//deletePublication/65e1859d75ca2f9122321f07",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-01T08:31:37.248Z",
+            "modified": "2024-03-01T08:32:09.149Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI4MTkyMywiZXhwIjoxNzA5MjkyNzIzfQ.HgEsQTu5m1ztGx4zadA3ihNJMHjpOBSSiTY9I4ZsKIg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "99ef32ef-0e89-4781-8e82-bd7183e34608",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "1dc758ca-68c6-45b6-9c4d-535cf757e62c",
+            "name": "save",
+            "url": "localhost:2627/comment/saveComment",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-03-01T13:09:48.824Z",
+            "modified": "2024-03-01T13:25:01.714Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e187252f83671abdafc0af"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "ojala gane checo perez"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e192ae57230e445e66ec99"
+                    },
+                    {
+                        "name": "fecha",
+                        "value": "2024/03/02 13:27:25"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c6cc2c9-d1b4-4ce7-865d-2138eb7f70db",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "1dc758ca-68c6-45b6-9c4d-535cf757e62c",
+            "name": "obtener",
+            "url": "localhost:2627/comment/obtener",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-01T13:16:40.999Z",
+            "modified": "2024-03-01T13:17:11.534Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aa802ecd-0d0e-4586-9252-375fb60e6b48",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "1dc758ca-68c6-45b6-9c4d-535cf757e62c",
+            "name": "update",
+            "url": "localhost:2627/comment/updateComment/65e1d4cb54476df805cfdb2b",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-03-01T13:21:36.956Z",
+            "modified": "2024-03-01T13:26:05.082Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "lamentable"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f21527c4-330e-4e53-943e-1cc6910624cc",
+            "colId": "37f45bf3-4897-4e06-a5db-6a8033e38d4b",
+            "containerId": "1dc758ca-68c6-45b6-9c4d-535cf757e62c",
+            "name": "delete",
+            "url": "localhost:2627/comment/deleteComment/65e1d4fc54476df805cfdb2e",
+            "method": "DELETE",
+            "sortNum": 180000,
+            "created": "2024-03-01T13:26:34.301Z",
+            "modified": "2024-03-01T13:28:06.925Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxN2VhMTVjZDk5YzVkNWZhOTljYzgiLCJ1c2VybmFtZSI6InphYmFsYSIsIm5hbWUiOiJJdHplcCIsImlhdCI6MTcwOTI5ODQyNywiZXhwIjoxNzA5MzA5MjI3fQ.I-sK96iPCU7j2ndVnmTFgW-PZgZQKtfDP23aZGupdqw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
